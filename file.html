@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Theme Company Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+  }
+  h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: bold;
+     height: 50px;
+  }
+  h3{
+color: #2C6085;
+  }
+  .jumbotron {
+    color: #fff;
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+    background: url(images.png);
+    height:652px;
+    font-size: 40;
+  }
+  .back
+  {
+    background: url(images.png);
+  }
+  .container-fluid {
+    padding: 60px 50px;
+    height:652px;
+    background-color: #57C6D6;
+  }
+  .bg-grey {
+    background-color: #F6F6F6;
+  }
+  .thumbnail img {
+    display: block;
+    text-align:center;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+  .panel {
+    border: 1px solid #F4511E;
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer {
+    background-color: white !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: #DCB6AB;
+    color: #fff;
+  }
+  .navbar {
+    margin-bottom: 0;
+    background-color:#0b465b;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  /* .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  } */
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  p1{
+align-items: center;
+color: #2C6085;
+  }
+  p0{
+    color: #FFFFFF;
+  }
+  ba
+  {
+         background-image: url(family.png);
+  }
+  .mine3{
+    position: absolute;
+    width:800px;
+    height:400px;
+    left:220px;
+    top:100px;
+  }
+  .mee{
+    width:800px;
+    height:400px;
+    left:220px;
+    top:50px;
+  }
+  .mine {
+    position: absolute;
+    width: 500px;
+    height: 50px;
+    left: 350px;
+    top: 10px;
+    font-size: 30px;
+   line-height: 47px;
+color: #FFFFFF;
+  }
+  .minee
+  {
+    position: absolute;
+width: 167px;
+height: 50px;
+left: 500px;
+top: 525px;
+background: #FFFFFF;
+border-radius: 29px;
+  }
+  .one{
+    position: absolute;
+width: 241px;
+height: 54px;
+left: 180px;
+top: 240px;
+font-family: 'OpenSans';
+font-size: 20px;
+line-height: 23px;
+display: flex;
+align-items: center;
+color: #2C6085;
+  }
+  .two
+  {
+    position: absolute;
+width: 276px;
+height: 135px;
+left: 140px;
+top: 280px;
+font-family: 'OpenSans';
+font-size: 20px;
+line-height: 30px;
+/* or 150% */
+text-align: center;
+color: #858F91;
+  }
+  .three
+  {
+    position: absolute;
+width: 182px;
+height: 54px;
+left: 500px;
+top: 240px;
+font-family: 'OpenSans';
+font-size: 20px;
+line-height: 23px;
+display: flex;
+align-items: center;
+color: #2C6085;
+  }
+  .four
+  {
+    position: absolute;
+width: 276px;
+height: 135px;
+left: 450px;
+top: 280px;
+font-family: 'OpenSans';
+font-size: 20px;
+line-height: 30px;
+/* or 150% */
+text-align: center;
+color: #858F91;
+  }
+  .five
+  {
+position: absolute;
+width: 230px;
+height: 54px;
+left: 800px;
+top: 240px;
+font-family: 'OpenSans';
+font-size: 20px;
+line-height: 23px;
+display: flex;
+align-items: center;
+color: #2C6085;
+  }
+  .six{
+    position: absolute;
+width: 252px;
+height: 135px;
+left: 780px;
+top: 280px;
+font-family: 'OpenSans';
+font-size: 20px;
+line-height: 30px;
+/* or 150% */
+text-align: center;
+color: #858F91;
+  }
+  .heading{
+    position: absolute;
+width: 587px;
+height: 54px;
+left: 350px;
+top: 9px;
+font-family: 'OpenSans';
+font-size: 40px;
+line-height: 47px;
+color: #2C6085;
+  }
+ .seven
+ {
+position: absolute;
+width: 138px;
+height: 58px;
+left: 500px;
+top: 450px;
+background: #57C6D6;
+border-radius: 29px;
+ }
+ .picone{
+    position: absolute;
+    width:900px;
+    height:100px;
+    left:150px;
+    top:100px;
+ }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#myPage">Oslo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">Pet insurance </a></li>
+        <li><a href="#services">Pets Cloud</a></li>
+        <li><a href="#portfolio">Vets</a></li>
+        <li><a href="#contact">Contacts</a></li>
+        <li><a href="#contact">Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- main page-->
+<div class="jumbotron text-center">
+  <h1>Unique Pet Insurance</h1>
+  <p>Love them,give them the best</p>
+  <form>
+    <div class="input-group">
+      <input type="email" class="form-control" size="50" placeholder="My pets name" required>
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-danger">Get started</button>
+      </div>
+    </div>
+  </form>
+</div>
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2 class="mine">Hassle-free digital experience</h2><br>
+      <img class="mine3" src="img.png">
+      <br><button class="btn btn-default btn-lg minee">Learn more</button>
+    </div>
+  </div>
+</div>
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-8">
+      <h3 class="heading">How Oslo Pet Insurance works</h3><br>
+      <img class="picone" src="pic.png">
+      <p1 class="one"><strong>Take your pet to the vets</strong></p1> <p class="two"> Seek the best veterinary treatment for your pet
+        when an accident or illness occurs.</p>
+        <p1 class="three"><strong>Send us your claim</strong></p1><p class="four">Take a photo of your veterinarian bill & submit it via Email, WhatsApp, website .</p>
+        <p1 class="five"><strong>Get money back quickly</strong></p1><p class="six"> Follow your claim status and get paid electronically (via direct deposit).
+          .</p>
+          <br><button class="btn btn-default btn-lg seven">GET QOUTE</button>
+      </div>
+  </div>
+</div>
+<!-- Container (Services Section) -->
+<div class="container-fluid back ">
+  <div class="row">
+    <div class="col-sm-8">
+      <h3>Built for all Pet Parents</h3><br>
+       <p0> “Yes we understand that all dogs and cats are individuals and they don't always act like their breed stereotype, but, well, we're just going to leave these here.”
+        -Emmanuel I. Founder OSLO
+       </p0>
+            </div>
+  </div>
+</div>
+<!-- Container (SUBCRIPTION) -->
+<div id="Portfolio" class="container-fluid text-center bg-grey">
+  <h3><b>Our Pet Insurance Plans</b></h3><br>
+  <h3>Sorry I can't my dog and I have ...plans</h3>
+  <img class="mee" src="annual.png">
+  <!-- <div class="row text-center"> -->
+    </div>
+  <!-- </div> -->
+  <br>
+  <!-- Container (coveage) -->
+<div id= "Portfolio" class="container-fluid text-center bg-grey">
+  <h3><b>Coverage that your pet needs</b></h3><br>
+  <h3>Everything I know I learned from my dogs</h3>
+  <!-- <div class="row text-center slideanim"> -->
+       <img class="mee" src="monthly.png">
+      </div>
+    <!-- </div> -->
+    <br>
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h3 class="text-center">CONTACT</h3>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Pakistan, LAHORE</p>
+      <p><span class="glyphicon glyphicon-phone"></span>030045678</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> aiman@gmail.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+      // Store hash
+      var hash = this.hash;
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+</body>
+</html>
